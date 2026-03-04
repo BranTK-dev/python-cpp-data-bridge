@@ -1,18 +1,21 @@
 # Python-C++ Data Bridge
-**Status:** 🚧 Python script is live; working on the C++ CSV reader.
+### 🚧 Status: In Progress | Expected Completion: September 2026
 
-## The Problem
-Python is great for grabbing data from the web, but UNISA taught me C++ for the heavy lifting. I wanted to see if I could make them work together.
+## Project Overview
+A multi-language pipeline demonstrating Inter-Process Communication (IPC). This project uses Python for efficient data acquisition (Web Scraping/APIs) and C++ for high-speed mathematical processing and visualization.
 
-## How it works (The Plan)
-1. **Python:** I wrote a script that pings a free API to get the current ZAR/USD exchange rate.
-2. **The Bridge:** Python saves that to a `.csv` file.
-3. **C++:** My Qt app reads that file and calculates moving averages to see where the Rand is heading.
+## Features
+- **Automated Ingestion:** Python script utilizing the `requests` library to fetch real-time financial or weather data.
+- **Data Bridge:** Efficient data transfer via CSV/JSON schema to bridge the two languages.
+- **High-Speed Analytics:** C++ backend for performing moving averages and statistical trend analysis on the ingested data.
 
 ## Tech Stack
-- **Python (Requests):** For the web stuff.
-- **C++:** For the math and the desktop dashboard.
+- **Languages:** Python 3.10, C++17
+- **Frameworks:** Qt 6, Python Requests/Pandas
+- **Pattern:** File-based Inter-Process Communication
 
-## To-Do
-- [ ] Automate the Python script to run every hour.
-- [ ] Fix the C++ bug where it crashes if the CSV is empty.
+## Current Milestones
+- [x] Repository structure and Python environment setup.
+- [ ] Python script for real-time API data fetching.
+- [ ] C++ File I/O logic for CSV data parsing.
+- [ ] Integration of statistical models in C++.
